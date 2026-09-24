@@ -1,0 +1,86 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string user_input;
+
+    cout << "Hi! How can I assist you? " << endl;
+    getline(cin, user_input);
+
+    // Greetings
+    if (user_input == "Hello") {
+        cout << "Hi! How can I help you today?" << endl;
+    }
+    else if (user_input == "Hi") {
+        cout << "Hello! Nice to meet you." << endl;
+    }
+    else if (user_input == "Hey") {
+        cout << "Hey! How are you doing?" << endl;
+    }
+    else if (user_input == "Good morning") {
+        cout << "Good morning! Have a great day." << endl;
+    }
+    else if (user_input == "Good afternoon") {
+        cout << "Good afternoon! How is your day going?" << endl;
+    }
+    else if (user_input == "Good evening") {
+        cout << "Good evening! How can I help you?" << endl;
+    }
+
+    // Basic conversation
+    else if (user_input == "How are you") {
+        cout << "I'm fine! What about you?" << endl;
+    }
+    else if (user_input == "What is your name") {
+        cout << "My name is C++ Bot." << endl;
+    }
+    else if (user_input == "Who are you") {
+        cout << "I'm a simple chatbot created using C++." << endl;
+    }
+    else if (user_input == "What are you doing") {
+        cout << "I'm here talking with you!" << endl;
+    }
+    else if (user_input == "Nice to meet you") {
+        cout << "Nice to meet you too!" << endl;
+    }
+
+    // Help
+    else if (user_input == "Help") {
+        cout << "I can respond to greetings and simple questions." << endl;
+    }
+    else if (user_input == "What can you do") {
+        cout << "I can have a simple conversation with you." << endl;
+    }
+
+    // Casual conversation
+    else if (user_input == "Thanks") {
+        cout << "You're welcome!" << endl;
+    }
+    else if (user_input == "Thank you") {
+        cout << "You're very welcome!" << endl;
+    }
+    else if (user_input == "Good job") {
+        cout << "Thank you! I appreciate that." << endl;
+    }
+    else if (user_input == "I am happy") {
+        cout << "That's great to hear!" << endl;
+    }
+    else if (user_input == "I am sad") {
+        cout << "I'm sorry to hear that. I hope things get better." << endl;
+    }
+
+    // Exit
+    else if (user_input == "Bye") {
+        cout << "Goodbye! Have a great day." << endl;
+        return 0;
+    }
+
+    // Unknown input
+    else {
+        cout << "Sorry, I can't get you." << endl;
+    }
+
+    return 0;
+}
